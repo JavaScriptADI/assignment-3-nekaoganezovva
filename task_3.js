@@ -22,3 +22,18 @@ console.log -ს რომ გადაცემთ ამ ფუნქცია
  # # # #
 # # # # 
 */
+let myGrid = 8;
+let board = '';
+
+for (let i = 0; i < myGrid; i++) {
+    for (let a = 0; a < myGrid; a++) {
+        if ((i + a) % 2 === 0) {
+            board += ' ';
+        } else {
+            board += '#';
+        }
+    }
+    board += '\n'; 
+}
+
+console.log(board);
